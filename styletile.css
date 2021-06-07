@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "alifiyahregular";
+  src: url("fonte/alifiyah-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Courgette", cursive;
+  color: #a39869;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+h3 {
+  font-family: "alifiyahregular";
+  color: #dcd8d2;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
