@@ -12,13 +12,101 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
+  color: #9d6b4d;
 }
 
 h3 {
   font-family: "alifiyahregular";
+  font-size: 2rem;
   color: #dcd8d2;
+  font-weight: 100;
 }
 
 p {
   font-family: "Raleway", sans-serif;
+  color: #9f847b;
+}
+
+li {
+  font-family: "alifiyahregular";
+  color: #dcd8d2;
+  font-size: 2rem;
+}
+
+#logo_boks {
+  background-color: #495f55;
+  height: 220px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.logo {
+  width: 130px;
+  grid-column: 2/3;
+  padding-top: 10px;
+  justify-self: center;
+}
+
+.logo_tekst {
+  width: 300px;
+  grid-column: 2/3;
+  margin-top: -15px;
+}
+
+body {
+  background-color: #efefee;
+}
+
+#hero_billede {
+  background-color: #9d6b4d;
+  width: 100%;
+  height: 50%;
+}
+
+footer {
+  background-color: #495f55;
+  height: 30px;
+}
+footer p {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  color: #efefee;
+  text-align: center;
+  padding-top: 8px;
+}
+
+/* BURGER MENU */
+
+.hidden {
+  /*    display: none;*/
+  /*    transform: scale(0);*/
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+#menuknap {
+  display: inline-block;
+}
+
+#menu {
+  list-style-type: none;
+  transition: transform 0.3s;
+  transform-origin: top left;
+}
+
+@media only screen and (min-width: 600px) {
+  #menuknap {
+    display: none;
+  }
+
+  #menu.hidden {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  #menu li {
+    display: inline-block;
+  }
 }
