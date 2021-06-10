@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="dk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om mig</title>
+
+    <link rel="stylesheet" href="styletile.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo_boks">
+        <div class="logo">
+          <a href="index.html"> <img src="img/logo.svg" alt="logo" /> </a>
+        </div>
+        <div class="logo_tekst"><h3>Denise Dalvang Hansen</h3></div>
+      </div>
+      <nav>
+        <div id="menuknap">☰</div>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="om.html">Om mig</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="om_wrapper">
+        <div id="om_img"><img src="img/denise.jpg" alt="denise" /></div>
+        <div id="om_beskrivelse">
+          <h1>Om mig</h1>
+          <p>
+            Mit navn er Denise, jeg er 26 år og er multimediedesigner-studerende
+            på KEA. Min passion for design er stor og minekreative evner er
+            uendelige
+          </p>
+        </div>
+        <div id="om_erhvervserfaring">
+          <h2>Erhvervserfaring</h2>
+        </div>
+      </section>
+
+      <section id="om_form_wrapper">
+        <section id="om_kontakt">
+          <h2>Kom i kontakt med mig</h2>
+        </section>
+        <section id="om_formular">
+          <form
+            action="tak.html"
+            name="kontakt"
+            class="kontakt_formular"
+            netlify
+          >
+            <input type="text" id="input-name" placeholder="Navn" />
+            <input type="email" id="input-email" placeholder="E-mail" />
+            <textarea
+              name="message"
+              id="input-message"
+              placeholder="Besked"
+            ></textarea>
+            <button id="input-submit">Indsend</button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer><p>Lavet af Denise Dalvang Hansen</p></footer>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
