@@ -17,3 +17,24 @@ function toggleMenu() {
     document.querySelector("#menuknap").textContent = "X";
   }
 }
+
+var quadimages = document.querySelectorAll("#animation_galleri figure");
+for (i = 0; i < quadimages.length; i++) {
+  quadimages[i].addEventListener("click", function () {
+    this.classList.toggle("expanded");
+  });
+}
+
+var quadimages = document.querySelectorAll("#redesign_galleri figure");
+for (i = 0; i < quadimages.length; i++) {
+  quadimages[i].addEventListener("click", function () {
+    this.classList.toggle("expanded");
+  });
+}
+
+var quadimages = document.querySelectorAll("#prototype_galleri figure");
+for (i = 0; i < quadimages.length; i++) {
+  quadimages[i].addEventListener("click", function () {
+    this.classList.toggle("expanded");
+  });
+}
