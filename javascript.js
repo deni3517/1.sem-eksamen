@@ -38,3 +38,10 @@ for (i = 0; i < quadimages.length; i++) {
     this.classList.toggle("expanded");
   });
 }
+
+var quadimages = document.querySelectorAll("#html_galleri figure");
+for (i = 0; i < quadimages.length; i++) {
+  quadimages[i].addEventListener("click", function () {
+    this.classList.toggle("expanded");
+  });
+}
