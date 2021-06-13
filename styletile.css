@@ -185,12 +185,12 @@ li a {
 #om_kontakt {
   text-align: center;
   background-color: var(--light);
-  height: 50px;
+  height: auto;
+  padding: 20px;
 }
 
 #om_kontakt h2 {
   color: var(--green);
-  padding-top: 10px;
 }
 
 #om_formular {
@@ -247,6 +247,7 @@ textarea,
   margin-top: 20px;
   margin-bottom: 20px;
   margin-inline: auto;
+  border-top: 1px;
 }
 
 #portfolio_menu {
@@ -299,7 +300,7 @@ textarea,
 }
 
 #portfolio_top hr {
-  color: var(--brown);
+  color: var(--green);
   width: 80%;
 }
 
