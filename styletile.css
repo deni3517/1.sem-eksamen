@@ -21,11 +21,10 @@
 
 body {
   background-color: #f6f6f6;
-  min-width: 400px;
 }
 
 h1 {
-  font-family: "Courgette", cursive;
+  font-family: "Raleway", sans-serif;
   color: var(--yellow);
 }
 
@@ -51,6 +50,12 @@ p {
   font-family: "Raleway", sans-serif;
   color: var(--light);
   font-size: 0.8rem;
+}
+
+#portfolio h1 {
+  font-weight: 900;
+  color: var(--yellow);
+  margin-top: 50px;
 }
 
 #om_erhvervserfaring h2 {
@@ -143,16 +148,72 @@ li a {
 }
 
 /****** FORSIDE ********/
-
-#hero_billede {
-  background-color: var(--brown);
+main .main_index {
   width: 100%;
-  height: 50%;
+  height: 800px;
+}
+main #hero_billede {
+  background-image: url(img/denise_forside1.webp);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
 }
 
+#hero_billede h1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  padding-left: 40px;
+  margin-top: -10px;
+  gap: 50px;
+}
+
+#hero_billede span:nth-child(1) {
+  color: var(--rosa);
+  grid-column: 1;
+}
+
+#hero_billede .designer_tekst p {
+  font-size: 0.6rem;
+}
+
+#hero_billede span:nth-child(2) {
+  color: var(--green);
+  grid-column: 2;
+}
+
+#hero_billede .coder_tekst p {
+  font-size: 0.6rem;
+}
+
+#hero_tekst {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#hero_tekst .designer_tekst {
+  grid-column: 1;
+  text-align: left;
+  width: 50%;
+  margin-left: 45px;
+}
+
+#hero_tekst .coder_tekst {
+  grid-column: 2;
+  text-align: right;
+  width: 50%;
+  margin-left: 50px;
+}
 /****** FORSIDE END ********/
 
 /****** OM SIDE ******/
+
+#om_wrapper {
+  margin-top: 50px;
+}
 
 #om_img img {
   width: 210px;
@@ -312,20 +373,19 @@ textarea,
 .opgave_knap {
   width: 300px;
   height: 30px;
-  border: none;
-  margin-top: 30px;
-}
-.opgave_knap a {
-  text-decoration: none;
-  color: var(--brown);
+  background-color: var(--light);
+  padding-top: 6px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
 }
 
 .opgave_knap a:hover {
   color: var(--light);
 }
 
-.opgave_knap:hover {
-  background-color: var(--brown);
+.opgave_knap a {
+  margin-left: 15px;
 }
 
 #animation h2 {
@@ -778,8 +838,7 @@ footer p {
 
   nav {
     text-align: center;
-
-    height: 90px;
+    height: 50px;
     background: linear-gradient(
       0deg,
       rgba(246, 246, 246, 1) 45%,
@@ -813,6 +872,62 @@ footer p {
   }
 
   /****** MENU END *****/
+
+  /****INDEX****/
+  main #hero_billede {
+    background-image: url(img/denise_forside1.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+  }
+
+  #hero_billede h1 {
+    font-size: 2.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 70px;
+    gap: 100px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #hero_billede span:nth-child(1) {
+    color: var(--rosa);
+    grid-column: 2;
+    text-align: center;
+    margin-left: -60px;
+  }
+
+  #hero_billede span:nth-child(2) {
+    color: var(--green);
+    grid-column: 3;
+    text-align: center;
+    margin-left: 100px;
+  }
+
+  #hero_tekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+  }
+
+  #hero_tekst .designer_tekst {
+    grid-column: 2;
+    width: 170px;
+    padding: 0;
+    margin: 0;
+    margin-left: -60px;
+  }
+
+  #hero_tekst .coder_tekst {
+    grid-column: 3;
+    width: 170px;
+    margin: 0;
+    margin-left: 120px;
+  }
+
+  /******INDEX END****/
 
   /*********** OM MIG **************/
   h2 {
@@ -851,6 +966,59 @@ footer p {
 }
 
 @media only screen and (min-width: 900px) {
+  /****INDEX****/
+  main #hero_billede {
+    background-image: url(img/denise_forside1.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 550px;
+  }
+
+  #hero_billede h1 {
+    font-size: 3.8rem;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    padding-top: 70px;
+    gap: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  #hero_billede span:nth-child(1) {
+    color: var(--rosa);
+    grid-column: 2;
+    text-align: left;
+  }
+
+  #hero_billede span:nth-child(2) {
+    color: var(--green);
+    grid-column: 4;
+    text-align: left;
+  }
+
+  #hero_tekst {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 100px;
+    gap: 0px;
+  }
+
+  #hero_tekst .designer_tekst {
+    grid-column: 2;
+    padding-left: 40px;
+    width: 200px;
+    margin-left: 105px;
+  }
+
+  #hero_tekst .coder_tekst {
+    grid-column: 4;
+    width: 200px;
+    margin-left: -30px;
+    text-align: left;
+  }
+
+  /******INDEX END****/
+
   #portfolio {
     margin-left: 120px;
     margin-right: 120px;
@@ -882,8 +1050,8 @@ footer p {
     width: 60%;
     height: auto;
     grid-column: span 2;
-    grid-row: 2 span 3;
-    margin-left: 250px;
+    grid-row: span 2;
+    margin-left: 200px;
     margin-top: -200px;
     padding: 40px;
   }
@@ -907,6 +1075,7 @@ footer p {
     background-color: var(--beige);
     grid-column: 1/2;
     height: auto;
+    padding-top: 70px;
   }
 
   #om_formular {
@@ -929,6 +1098,7 @@ footer p {
   /***** OM MIG END *****/
 
   /****** PORTFOLIO MENU *****/
+
   #portfolio_top {
     display: grid;
     grid-template-columns: 1fr;
@@ -948,44 +1118,43 @@ footer p {
     background-color: var(--brown);
   }
   #portfolio_menu ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     height: 50px;
   }
 
   #portfolio_menu .menu1 {
     width: 20%;
-    grid-column: 1/5;
-    grid-row: 1;
     background: none;
   }
 
   #portfolio_menu .menu2 {
     width: 20%;
-    grid-column: 2/5;
-    grid-row: 1;
     background: none;
   }
 
   #portfolio_menu .menu3 {
     width: 20%;
-    grid-column: 3/5;
-    grid-row: 1;
     background: none;
   }
 
   #portfolio_menu .menu4 {
     width: 20%;
-    grid-column: 4/5;
-    grid-row: 1;
+
     background: none;
   }
 
   #portfolio_menu .menu5 {
     width: 20%;
-    grid-column: 5/5;
-    grid-row: 1;
+
     background: none;
+  }
+
+  #portfolio_menu .menu1 a,
+  .menu2 a,
+  .menu3 a,
+  .menu4 a,
+  .menu5 a {
+    padding-right: 20px;
   }
   /**** PORTFOLIO MENU END ******/
 
