@@ -1013,7 +1013,7 @@ footer p {
   #hero_tekst .coder_tekst {
     grid-column: 4;
     width: 200px;
-    margin-left: -30px;
+    margin-left: -10px;
     text-align: left;
   }
 
