@@ -113,7 +113,6 @@ li a {
   transition: transform 0.3s;
   transform-origin: top left;
   width: auto;
-  margin-inline: auto;
   margin-top: -19px;
   background: linear-gradient(
     0deg,
