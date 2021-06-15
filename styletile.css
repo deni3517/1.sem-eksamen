@@ -481,9 +481,10 @@ div.full figure:not(.expanded) {
 #video {
   gap: 30px;
 }
-video {
+
+iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 #video h2 {
